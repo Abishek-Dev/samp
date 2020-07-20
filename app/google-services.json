@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "1023986423050",
+    "firebase_url": "https://sona-photo-gallery.firebaseio.com",
+    "project_id": "sona-photo-gallery",
+    "storage_bucket": "sona-photo-gallery.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1023986423050:android:16a12ab3bf9e2c4d9356f3",
+        "android_client_info": {
+          "package_name": "com.steppers.retrive_img"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1023986423050-vskbknbocoq7sqf64qvv0vk6ir710qr6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzBcZLcOaJvBYUNHp5tpNdgu8td_2YZjU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1023986423050-vskbknbocoq7sqf64qvv0vk6ir710qr6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1023986423050:android:724370b1fea3f1159356f3",
+        "android_client_info": {
+          "package_name": "com.steppers.samp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1023986423050-vskbknbocoq7sqf64qvv0vk6ir710qr6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzBcZLcOaJvBYUNHp5tpNdgu8td_2YZjU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1023986423050-vskbknbocoq7sqf64qvv0vk6ir710qr6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1023986423050:android:4718d3ead3bb2bee9356f3",
+        "android_client_info": {
+          "package_name": "com.steppers.sonaphotogallery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1023986423050-vskbknbocoq7sqf64qvv0vk6ir710qr6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzBcZLcOaJvBYUNHp5tpNdgu8td_2YZjU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1023986423050-vskbknbocoq7sqf64qvv0vk6ir710qr6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
