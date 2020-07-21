@@ -1,5 +1,6 @@
 package com.steppers.samp;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -28,6 +29,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 
 import java.io.ByteArrayOutputStream;
+import java.util.List;
 
 public class PostsListActivity extends AppCompatActivity {
 
@@ -67,7 +69,7 @@ public class PostsListActivity extends AppCompatActivity {
 
         String query = searchText;
 
-        Query firebaseSearchQuery = mRef.orderByChild("imgName").startAt(query.toUpperCase()).endAt(query.toLowerCase() + "\uf8ff");
+        Query firebaseSearchQuery = mRef.orderByChild("imgName").startAt(query).endAt(query+ "\uf8ff");
 
         FirebaseRecyclerAdapter<Model, ViewHolder> firebaseRecyclerAdapter =
                 new FirebaseRecyclerAdapter<Model, ViewHolder>(
@@ -78,7 +80,7 @@ public class PostsListActivity extends AppCompatActivity {
                 ) {
                     @Override
                     protected void populateViewHolder(ViewHolder viewHolder, Model model, int position) {
-                        viewHolder.setDetails(getApplicationContext(), model.getImgName(), model.getImgUrl());
+                            viewHolder.setDetails(getApplicationContext(), model.getImgName(), model.getImgUrl());
                     }
 
                     @Override
@@ -114,8 +116,6 @@ public class PostsListActivity extends AppCompatActivity {
 
                         return viewHolder;
                     }
-
-
                 };
 
         //set adapter to recyclerview
@@ -186,7 +186,7 @@ public class PostsListActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu, menu);
         MenuItem item = menu.findItem(R.id.action_search);
-        SearchView searchView = (SearchView) item.getActionView();
+        SearchView searchView = (SearchView) MenuItemCompat.getActionView(item);
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {

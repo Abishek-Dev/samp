@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation= "vertical"
+    android:gravity="center_horizontal"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/neww"
+        />
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/na"
+            android:layout_width="150dp"
+            android:layout_height="52dp"
+            tools:layout_editor_absoluteY="210dp"
+            android:text="Name"
+            android:textSize="25sp"
+            />
+
+        <EditText
+            android:id="@+id/fn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:paddingHorizontal="15dp"
+            tools:layout_editor_absoluteX="180dp"
+            tools:layout_editor_absoluteY="210dp" />
+
+        <EditText
+            android:id="@+id/ln"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Last_name"
+            android:paddingLeft="5dp"
+            android:paddingStart="20dp"
+            android:layout_marginLeft="20dp"
+            tools:layout_editor_absoluteX="300dp"
+            tools:layout_editor_absoluteY="210dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/e1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reg Number"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/rno"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Enter Your Register NUmber"
+            android:layout_marginLeft="50dp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+
+
+        <TextView
+            android:id="@+id/e"
+            android:layout_width="150dp"
+            android:layout_height="52dp"
+            android:text="E-Mail ID"
+            android:textSize="25sp" />
+        <EditText
+            android:id="@+id/em"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your E-Mail ID"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/mn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginStart="75dp"
+            android:inputType="phone"
+            android:hint="Enter your Mobile Number" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/a"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:text="Address"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginHorizontal="10dp"
+            android:hint="Enter Your Residential Address" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tpwd"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:text="Password"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/pwd"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:layout_marginStart="46dp"
+            android:layout_marginLeft="80dp"
+            android:hint="Enter Your Password"
+            android:inputType="textPassword"
+            android:layout_width="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        >
+        <TextView
+            android:id="@+id/rpwd"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:text="Confirm       "
+            android:textSize="25sp" />
+        <EditText
+            android:id="@+id/rpw"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="80dp"
+            android:hint="Re-Enter the Password"
+            android:ems="10"
+            android:inputType="textPassword" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/rger"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="#DA0D089F"
+        android:text="Register"
+        android:layout_marginTop="45dp"
+        android:textColor="#F1D900" />
+</LinearLayout>

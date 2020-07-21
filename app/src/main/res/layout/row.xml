@@ -28,12 +28,6 @@
             android:scaleType="centerCrop"
             android:adjustViewBounds="true"
             android:background="@drawable/loadingimage"/>
-        <TextView
-            android:id="@+id/rDescriptionTv"
-            android:text="This will be the description of the post"
-            android:textSize="20sp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
 
     </LinearLayout>
 

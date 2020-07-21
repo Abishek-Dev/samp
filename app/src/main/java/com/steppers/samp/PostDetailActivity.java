@@ -131,7 +131,7 @@ public class PostDetailActivity extends AppCompatActivity {
         String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss",
                 Locale.getDefault()).format(System.currentTimeMillis());
         File path = Environment.getExternalStorageDirectory();
-        File dir = new File(path+"/Firebase/");
+        File dir = new File(path+"/Sona Photo Gallery/");
         dir.mkdirs();
         //image name
         String imageName = timeStamp + ".PNG";
